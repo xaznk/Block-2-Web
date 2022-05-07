@@ -21,7 +21,6 @@ class Cls2(metaclass=Meta):
 
 
 assert (Cls1.class_number, Cls2.class_number) == (0, 1)
-print(Cls1.class_number, Cls2.class_number)
 a, b = Cls1(''), Cls2('')
 assert (a.class_number, b.class_number) == (0, 1)
-print(Cls1.class_number, Cls2.class_number)
+
