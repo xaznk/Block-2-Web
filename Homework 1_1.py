@@ -28,7 +28,7 @@ class BinSerialization(SerializationBaseClass):
             data = pkl.load(f)
             return data
 
-
+        
 a = JSONSerialization.serialize(['12345678', 12312, '12412573'])
 print(a)
 b = BinSerialization.serialize('1421')
