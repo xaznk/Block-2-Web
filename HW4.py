@@ -98,7 +98,7 @@ if __name__ == "__main__":
     folder = Path(scan_path)
     folder.resolve()
     s = SortManager()
-    s.sort(folder)
+    # s.sort(folder)
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         executor.submit(s.sort(folder))
         s.scan_for_folders(folder)
